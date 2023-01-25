@@ -1,0 +1,40 @@
+p{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+body{
+    background-color: beige;
+    background-color: rgb(0, 91, 171);
+}
+nav{
+    background-color: rgb(245, 233, 174);
+    border: 2px double;
+}
+img{
+    width: 40%;
+    height: 40%;
+}
+
+
+
+
+@media all{
+    p{
+        display:grid;
+        float:left;
+        width: 40%;
+    }
+    img{
+        float :left;
+    }
+}
+@media screen {
+    img{
+        display: inline-block;/* hare que la imagen sea tratada como elemento en bloque para despues alinearla con un margin auto*/
+        margin: auto;
+        padding: 15px;
+        float: auto;
+        
+    }
+}

@@ -1,0 +1,38 @@
+p{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+body {
+  -webkit-print-color-adjust: exact !important;
+}
+body{
+    background-color: beige;
+}
+nav{
+    background-color: rgb(245, 233, 174);
+    border: 2px double;
+}
+img{
+    width: 40%;
+    height: 40%;
+}
+
+@media all{ /*PODIA USAR :"  not screen  "  pero en este caso juego con poner la propiedad del media screen en la linea 28 para aplicar esa excepcion solo a pantalla*/
+    p{
+        display:block;
+        float:left;
+        width: 80%;
+    }
+    img{
+        float :left;
+    }
+}
+@media screen {
+    img{
+        display: block;/* hare que la imagen sea tratada como elemento en bloque para despues alinearla con un margin auto*/
+        margin: auto;
+        padding: 15px;
+        float:none;      
+    }
+}
