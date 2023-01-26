@@ -1,7 +1,7 @@
 div{
     color:red;/*red: es error, falta el ;despues de red*/
     font-family:verdana;/*le faltaba -family*/
-    opacity: 0,5;
+    opacity: 0.5;
     
 }
 body{

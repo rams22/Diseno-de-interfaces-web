@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>formulario</title>
+        <style>
+            @import url(../hojaEst.css);
+        </style>
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form>
+            <fieldset><h3>Metodo 1 label:</h3><h3 class="xs">asociación incluyendo a la etiquta y al control como contenido del elemento <U>label</U></h3>
+                <label>Email: <input type="email"></input></label>
+            </fieldset>
+            <fieldset><h3>Metodo 2 label:</h3><h3 class="xs">haciendo que los atributos id en el control y for en el <U>label</U></h3>
+                <label for="name_id">Nombre</label>
+                <input type="text" name="tu_nombre" id="name_id">
+            </fieldset>
+            <input type="submit" value="enviar">
+            <input type="reset" value="reset">
+
+        </form>
+        <footer>
+            <button class="menu" onclick="location.href='../menu.html'">Volver al menu</button>
+            <button class="menu" onclick="location.href='./galeria.html'">Galeria de imagenes</button>  
+        </footer>
+    
+    </body>
+</html>

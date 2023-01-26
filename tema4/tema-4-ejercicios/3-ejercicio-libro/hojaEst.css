@@ -10,4 +10,8 @@ body{
 .xs{
     font-size: xx-small;
 }
+.menu{
+    background-color: rgb(203, 200, 192);
+    border-radius: 15%;
 
+}
