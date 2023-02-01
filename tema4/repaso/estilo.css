@@ -1,0 +1,33 @@
+header{
+    background-color: red;
+}
+nav{
+    background-color: aquamarine;
+}
+main{
+    background-color: yellow;
+}
+article{
+    background-color: rgb(21, 138, 184);
+}
+body{
+    background-color: rgb(172, 120, 8);
+}
+footer{
+    background-color: gray;
+    float:unset;
+}
+aside{
+    background-color: blueviolet;
+    float: right;
+    width: 40%;
+}
+.container {
+    border:solid black 2px;
+    float: left;
+    width: 60%;
+}
+body{
+    display:table;
+    width: 100%;
+}

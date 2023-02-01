@@ -1,0 +1,11 @@
+p{
+    color:rgb(11, 132, 212);
+}
+
+#p2{
+    color: greenyellow;
+}
+
+#p1,#p4{
+    font-weight: bold;
+}
