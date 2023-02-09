@@ -1,17 +1,15 @@
-textarea:focus{
+textarea:focus,button:active{
     background-color: brown;
     color: azure;
-}
-button:active{
-    background-color: brown;
-    color:azure;
 }
 a:link{
     color:yellow;
 }
 a:hover{
     background-color: rgb(179, 88, 88);
+    color:white;
 }
 a:visited{
-    color:blue;
+    color:orange;
 }
+

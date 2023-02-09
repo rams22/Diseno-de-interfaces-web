@@ -1,0 +1,30 @@
+h1{
+    text-transform: uppercase;
+}
+h2::first-letter{
+    text-transform: capitalize;
+}
+
+a:visited{
+    font-weight: bolder;
+    color:black;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+a{
+    text-decoration: none;
+    color:green;
+}
+li{
+    font-style: italic;
+}
+h1,h2:nth-child(odd){
+    color :orange;
+    text-decoration: none;
+}
+h1,h2:nth-child(even){/*impares azul*/
+    color:rgb(19, 145, 218);
+    text-decoration: underline;
+}
