@@ -1,30 +1,69 @@
-h1{
-    text-transform: uppercase;
+p::first-letter{
+    text-transform: uppercase; 
 }
-h2::first-letter{
-    text-transform: capitalize;
+div{
+    margin: 20px 14px;
+    padding-left: 16px;
+    border:2px solid rgb(32, 139, 201);
+    font-weight: bolder;
+    width: 275px;
+    background-color: aliceblue;
+    outline: 8px solid rgb(100, 208, 235);
+}
+body{
+    background-color: rgb(247, 247, 247);
 }
 
-a:visited{
-    font-weight: bolder;
-    color:black;
+/***Contadores***/
+body{
+    counter-reset:elemento;
 }
-a:hover{
-    text-decoration: underline;
-    color: red;
+p::before{
+    counter-increment:elemento;/*le doy el nombre al contador, que abajo pasare como parametro, en la siguiente linea le dire el contenido que quiero incrementar*/
+    content: counter(elemento)".";
 }
-a{
-    text-decoration: none;
-    color:green;
+
+/***************/
+
+p:nth-child(1){
+    font-size: xx-small;
 }
-li{
-    font-style: italic;
+p:nth-child(1)>span{
+    word-spacing: 14px;
 }
-h1,h2:nth-child(odd){
-    color :orange;
-    text-decoration: none;
+
+p:nth-child(2){
+    font-size: small;
 }
-h1,h2:nth-child(even){/*impares azul*/
-    color:rgb(19, 145, 218);
-    text-decoration: underline;
+p:nth-child(2)>span{
+    word-spacing: 12px;
+}
+
+p:nth-child(3){
+    font-size:medium;
+}
+p:nth-child(3)>span{
+    word-spacing: 10px;
+}
+
+p:nth-child(4){
+    font-size:large;
+}
+p:nth-child(4)>span{
+    word-spacing:2px;
+}
+
+
+p:nth-child(5){
+    font-size:x-large;
+}
+p:nth-child(5)>span{
+    word-spacing: 0px;
+}
+
+
+p:nth-child(6){
+    font-size: xx-large;
+}p:nth-child(6)>span{
+    word-spacing: 20px;
 }
