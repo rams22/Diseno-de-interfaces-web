@@ -8,12 +8,19 @@
     margin-left: 22px;
     float: left;
 }
+article{
+    border: 2px solid red;
+    margin-top: 22px;
+    background-color: antiquewhite;
+}
 h1{
     text-align: center;
     text-decoration: underline;
 }
 .pie{
-    background-color: rgb(46, 123, 147);
     float:inline-end;
     
+}
+body{
+    background-color: rgb(86, 174, 174);
 }
