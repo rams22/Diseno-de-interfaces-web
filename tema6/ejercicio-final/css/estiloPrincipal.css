@@ -1,0 +1,29 @@
+@import url(./aside.css);
+@import url(./header.css);
+@import url(./temas-colores.css);
+@import url(./main-menu.css);
+
+
+
+html,body{
+    margin: 0;
+    padding: 0;/*para que el navegador no me cree ninguno, que se reseteen a 0*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    max-width: 1200px;
+    margin: 0 auto; /*para que se me centre*/
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color:var(--color2-oscuro);
+    text-decoration: none;
+    transition:all 0.3s;/*para cuando cambie del a al hover tarde 0,3*/
+}
+a:hover{
+    color:var(--color1-claro)
+}
