@@ -51,7 +51,9 @@ aside h3{
 .widget ul li{
     margin: 10px 0;
 }
-
+.widget ul li:hover a{
+    color: rgb(196, 187, 16);
+}
 .widget blockquote{
     margin: 0;
     color: var(--color3-oscuro);

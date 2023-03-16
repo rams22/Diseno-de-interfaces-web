@@ -1,0 +1,60 @@
+#contenido{
+    float:left;
+    
+    /*el contenido deberia ocupar todo menos los 300 pixeles de la izquierda. Al ser responsive no lo sabemos*/
+    width: calc(100% - 270px);
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 30px; /*lo mismo que el aside para ajustarlo*/
+    
+}
+
+#contenido h1{
+    margin:0;
+    font-size: 30px;
+    color: var(--color1-claro);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px var(--color3-oscuro);
+    margin-bottom: 20px;
+}
+
+#contenido article{
+    background-color: white;
+    padding: 30px;
+    margin-bottom:30px ;
+    border: solid 1px var(--color1-claro);
+    box-shadow: 2px 2px 5px var(--color3-oscuro);
+}
+
+#contenido article h2{
+    margin: 0;
+    color: var(--color1-claro);
+}
+#contenido article a{
+    font-size: 20px;
+    float: right;
+}
+
+.paginado{
+    float: right;
+}
+.paginado li{
+    display: inline-block;
+}
+.paginado li a{
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid var(--color3-oscuro);
+}
+.paginado li:hover a{
+    color: white;
+    border: solid 1px var(--color1-oscuro);
+    background-color: brown;
+}
+
+@media (max-width:700px){
+    #contenido{
+        width: 100%;
+        /*asi cuando una pantalla llegue a los 700 px se ajustara a el 100%*/
+    }
+}
