@@ -1,6 +1,69 @@
 aside{
     float: left;
-    background-color: rgb(155, 183, 30);
-    height: auto;
-    margin-top: 0.1%;
+    background-color: var(--color1-claro);
+    width: 270px;
+    margin-top: 30px;
+    border:solid 1px var(--color3-claro);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+aside h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding:5px;
+    text-align: center;
+    background-color: rgb(4, 74, 95);
+    border-top:  solid 1px var(--color2-oscuro);
+}
+
+.widget{
+    margin-bottom: 60px;
+}
+.widget form input[type="email"], .widget form input[type="password"]{
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.widget form input[type="submit"]{
+   width: 100%;
+   text-transform: uppercase;
+   color:white;
+   background-color: var(--color1-oscuro);
+   padding: 10px;
+   border: none;
+   transition: all 0.7;
+}
+.widget form input[type="submit"]:hover{
+    background-color: brown;
+    cursor: pointer;
+
+}
+
+.widget ul{
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.widget ul li{
+    margin: 10px 0;
+}
+
+.widget blockquote{
+    margin: 0;
+    color: var(--color3-oscuro);
+    font-style: italic;
+}
+
+/*responsive*/
+
+@media (max-width:700px){
+    aside{
+        width: 100%;
+    }
+
+
 }
