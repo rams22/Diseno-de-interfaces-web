@@ -1,0 +1,14 @@
+div.circle{
+   background: rgba(191,63,116,1);
+   width: 400px;
+   height: 400px;
+   border-radius:200px;
+   margin: 100 auto;
+   display: block;
+   transition: background 1s steps(4); 
+}
+
+div.circle:hover{
+    background: rgba(83, 180, 191,1);/*el 1 es la opacidad y va de 0 a 1*/
+
+}
