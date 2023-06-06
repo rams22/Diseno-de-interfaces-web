@@ -1,0 +1,64 @@
+#main-menu{
+    float: left;
+    width: 100%;
+    background-color: var(--oscuro2-oscuro);
+    box-shadow: 2px 2px 5px var(--color3-oscuro);
+    text-transform: uppercase;
+}
+#main-menu> ul>li{
+    float: left;
+    margin:10px 0;
+}
+#main-menu> ul>li>a{
+    color:white;
+    padding: 10px 20px;
+    border-right: solid 1px var(--color3-oscuro);
+}
+#main-menu> ul>li>a:hover{    
+    background-color:var(--color1-oscuro);
+}
+
+
+
+#main-menu> ul>li>ul{
+display: none;
+position: absolute;
+margin-top: 10px;
+}
+#main-menu> ul>li>ul>li>a{
+    display: block;
+    color: var(--color1-oscuro);
+    background-color: var(--color3-oscuro);
+    padding: 15px;
+    font-size: 18px;
+    border-top: solid 1px var(--color3-claro);
+}
+#main-menu> ul>li>ul>li>:hover{
+    background-color: var(--color1-oscuro);
+    color: var(--color1--claro);
+}
+#main-menu>ul>li:hover>ul{
+    display: block;
+    box-shadow: 2px 2px 5px var(--color3-oscuro);
+}
+
+
+
+/* Para hacer la web responsive, por pantallas pequeñas  */
+
+@media (max-width: 700px){
+    #main-menu>ul>li{
+        width: 100%;
+        margin:0;
+        border-bottom: solid 1px var(--color3-claro);
+    }
+    #main-menu>ul>li>a{
+        text-align: center;
+        display: block;
+    }
+    #main-menu>ul>li>ul{
+        width: 100%;
+    }
+
+
+}

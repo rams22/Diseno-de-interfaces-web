@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa de imagenes</title>
+    <style>
+        body{
+            background-color: rgb(200, 221, 214);
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;   
+        }
+        figure {
+            background-color: rgb(13, 14, 14);
+            border: thin #e7ece9 solid;
+            display:inline-block;
+            flex-flow: column;/* para que el figcaption se ponga debajo en colimna*/
+            padding: 5px;
+            max-width: 280px;
+            margin: auto;
+        }
+        figcaption {
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+        }
+
+        img {
+            -webkit-transition:all .9s ease; /* Safari y Chrome */
+            -moz-transition:all .9s ease; /* Firefox */
+            width:100%;
+        }
+         figure img:hover  {
+            -webkit-transform:scale(1.25);
+            -moz-transform:scale(1.25);
+            -ms-transform:scale(1.25);
+            -o-transform:scale(1.25);
+            transform:scale(1.25);}
+    </style>
+</head>
+<body>
+    <h1>Comparativa</h1>
+    <figure>
+        <img src="./fotos/100jpg.jpg" type="image/jpg">
+        <figcaption>jpg 100%</figcaption>
+    </figure>
+    <figure>
+        <img src="./fotos/75jpg.jpg" type="image/jpg">
+        <figcaption>jpg 75%</figcaption>
+    </figure>
+    <figure>
+        <img src="./fotos/50jpg.jpg" type="image/jpg">
+        <figcaption>jpg 50%</figcaption>
+    </figure>
+    <figure>
+        <img src="./fotos/25jpg.jpg" type="image/jpg">
+        <figcaption>jpg 25%</figcaption>
+    </figure>
+    <figure>
+        <img src="./fotos/gif.gif" type="image/gif">
+        <figcaption>gif</figcaption>
+    </figure>
+
+
+
+
+</body>
+</html>
