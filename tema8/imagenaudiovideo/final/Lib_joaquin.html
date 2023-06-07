@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gráfica</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="migrafica" width="400" height="190"></canvas>
+  <script>
+    // Pondre los navegadores y su información en el array
+    var data = {
+      labels: ['Chrome', 'Safari', 'Edge', 'Opera','Firefox','Samsung Internet'],
+      datasets: [{
+        data: [62.85, 20.72, 5.31, 2.82, 2.77,2.50],
+        backgroundColor: [
+          'green',
+          'blue',
+          'brown',
+          'orange',
+          'red'
+        ]
+      }]
+    };
+
+    // ahora dare la confi de la gráfica, maximo tamaño le pondre 70 porque es suficiente
+    var options = {
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 70
+        }
+      }
+    };
+
+    // Crear gráfico de barras
+    var paraGrafico = document.getElementById('migrafica').getContext('2d');
+    var migrafica = new Chart(paraGrafico, {
+      type: 'bar',//barras en grafica
+      data: data,
+      options: options
+    });
+  </script>
+</body>
+</html>
