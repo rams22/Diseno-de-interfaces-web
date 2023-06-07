@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animacion 2</title>
+    <style>
+      p {
+        animation:  6s 10;
+        animation-name: estiloanimacion;
+        position:relative;
+        
+        animation-direction: alternate;
+      }
+
+      @keyframes estiloanimacion {
+        from {
+          margin-left: 50%;
+          width: 200%;
+        }
+        50% {
+          font-size: 200%;
+          margin-left: 10%;
+          width: 150%;
+        }
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animacion que se repite 5 veces</h1>
+    <p>dfdg</p>
+  </body>
+</html>

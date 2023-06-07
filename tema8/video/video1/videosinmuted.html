@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <h1>Video automatico sin controles</h1>
+    <video controls width="320px" height="240px" preload="auto" oncontextmenu="return false;">
+        <source src="./video/editado.mp4" type="video/mp4">
+        <source src="./video/editado2.webm" type="video/webm">
+        Tu navegador no es compatible con este video
+    </video>
+    <h4>El atributo autoplay solo funciona si pones muted.</h4>
+    <p>En este caso pondre controls, porque al no mutearlo, el autoplay no funcionaría.</p>
+</body>
+</html>
